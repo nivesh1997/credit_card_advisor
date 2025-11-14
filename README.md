@@ -15,13 +15,15 @@ For RULE BASED UI:
 Open in browser:        
 http://local host:8000/ 
 
-you will get UI like:
+you will get UI like this:
 
 ![Screenshot 2025-11-14 153947](https://github.com/user-attachments/assets/f36f79fb-2a5d-4db3-8a49-ea43643e7408)
 
 
 
 For LLM BASED UI:
+
+you will get UI like this:
 
 Open in browser:        
 http://local host:8000/llm
