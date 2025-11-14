@@ -106,7 +106,7 @@
             const messagesEndRef = useRef(null);
 
             useEffect(() => {
-                addMessage("👋 Welcome! I'm your AI Credit Card Advisor powered by Google Gemini.", 'bot');
+                addMessage(" Welcome! I'm your AI Credit Card Advisor powered by Google Gemini.", 'bot');
                 setTimeout(() => {
                     addMessage("Tell me about your income, spending habits, and preferences. I'll use AI to find the perfect cards for you! 🤖", 'bot');
                 }, 500);
@@ -154,7 +154,7 @@
 
                 } catch (error) {
                     console.error('Error:', error);
-                    addMessage("🚨 Error: " + error.message + " Make sure GOOGLE_API_KEY is set in environment variables.", 'bot');
+                    addMessage(" Error: " + error.message + " Make sure GOOGLE_API_KEY is set in environment variables.", 'bot');
                     setLoading(false);
                 }
             };
@@ -198,12 +198,12 @@
                     const data = await response.json();
 
                     setTimeout(() => {
-                        addMessage("✨ Here are my AI-powered recommendations:\n\n" + data.llm_analysis, 'bot');
+                        addMessage(" Here are my AI-powered recommendations:\n\n" + data.llm_analysis, 'bot');
 
                         // Show top recommendations
                         if (data.recommendations && data.recommendations.length > 0) {
                             const topCards = data.recommendations.slice(0, 3);
-                            let cardSummary = "\n📊 Top Cards:\n";
+                            let cardSummary = "\n Top Cards:\n";
                             topCards.forEach((card, i) => {
                                 cardSummary += `\n${i + 1}. ${card.name}\n`;
                                 cardSummary += `   Score: ${Math.round(card.score)}/100\n`;
@@ -216,7 +216,7 @@
                     }, 1000);
                 } catch (error) {
                     console.error('Error:', error);
-                    addMessage("🚨 Error fetching recommendations: " + error.message, 'bot');
+                    addMessage(" Error fetching recommendations: " + error.message, 'bot');
                     setLoading(false);
                 }
             };
@@ -232,7 +232,7 @@
                                 </div>
                                 <h1 className="text-4xl font-bold text-gray-800">Credit Card Advisor</h1>
                             </div>
-                            <p className="text-gray-600 text-lg">🤖 AI-Powered by Google Gemini</p>
+                            <p className="text-gray-600 text-lg"> AI-Powered by Google Gemini</p>
                             <div className="mt-2 inline-flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">
                                 <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
                                 LLM Interface Active
@@ -338,7 +338,7 @@
                                             })}
                                             className="w-full px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition text-sm font-medium"
                                         >
-                                            💼 Budget Conscious
+                                             Budget Conscious
                                         </button>
                                         <button
                                             onClick={() => setQuickProfile({
@@ -352,7 +352,7 @@
                                             })}
                                             className="w-full px-4 py-2 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition text-sm font-medium"
                                         >
-                                            ✈️ Frequent Traveler
+                                             Frequent Traveler
                                         </button>
                                         <button
                                             onClick={() => setQuickProfile({
@@ -366,7 +366,7 @@
                                             })}
                                             className="w-full px-4 py-2 bg-yellow-100 text-yellow-700 rounded-lg hover:bg-yellow-200 transition text-sm font-medium"
                                         >
-                                            👑 Premium Spender
+                                             Premium Spender
                                         </button>
                                     </div>
                                 </div>
