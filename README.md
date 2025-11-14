@@ -27,7 +27,8 @@ you will get UI like this:
 
 Open in browser:        
 http://local host:8000/llm
-![Screenshot 2025-11-14 154026](https://github.com/user-attachments/assets/01055552-bcae-49dc-b2b5-b3e0b31bbe61)
+<img width="1647" height="897" alt="image" src="https://github.com/user-attachments/assets/3378dd48-388a-4e11-aeb2-fc6b8dd5bfff" />
+
 
 
 *****************Result*******************
